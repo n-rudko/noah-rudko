@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,15 +38,15 @@
             transform: translateY(-2px);
         }
         /* Style for the presentations list */
-        .presentation-item, .publication-item {
+        .presentation-item, .publication-item, .proposal-item {
             padding: 1rem;
             border-bottom: 1px solid #e5e7eb;
             transition: background-color 0.2s;
         }
-        .presentation-item:last-child, .publication-item:last-child {
+        .presentation-item:last-child, .publication-item:last-child, .proposal-item:last-child {
             border-bottom: none;
         }
-        .publication-item:hover {
+        .publication-item:hover, .proposal-item:hover {
             background-color: #f9fafb;
         }
         .timeline-dot {
@@ -73,6 +73,7 @@
                 <a href="#about" class="text-gray-600 hover:text-arkansas-red transition duration-150">About</a>
                 <a href="#research" class="text-gray-600 hover:text-arkansas-red transition duration-150">Research</a>
                 <a href="#publications" class="text-gray-600 hover:text-arkansas-red transition duration-150">Publications</a>
+                <a href="#proposals" class="text-gray-600 hover:text-arkansas-red transition duration-150">Proposals</a> <!-- NEW LINK -->
                 <a href="#skills" class="text-gray-600 hover:text-arkansas-red transition duration-150">Skills</a>
                 <a href="#teaching" class="text-gray-600 hover:text-arkansas-red transition duration-150">Teaching</a>
                 <a href="#awards" class="text-gray-600 hover:text-arkansas-red transition duration-150">Awards</a>
@@ -86,8 +87,13 @@
         <!-- 1. Introduction/About Section (Bio updated) -->
         <section id="about" class="bg-white p-8 md:p-12 rounded-2xl shadow-xl transition duration-300 hover:shadow-2xl">
             <div class="flex flex-col md:flex-row items-start md:space-x-12">
-                <!-- Profile Image (Placeholder) -->
+                <!-- Profile Image -->
                 <div class="flex-shrink-0 mb-6 md:mb-0">
+                    <!-- 
+                        ACTION REQUIRED:
+                        Replace the placeholder URL below with the direct, public URL to your photo (e.g., from GitHub, Imgur, or a university server). 
+                        The recommended size is a square image (e.g., 400x400 pixels). 
+                    -->
                     <img src="https://campusdata.uark.edu/resources/images/FacultyStaffProfile/nrudko.jpg?1763615570208&w=440" 
                          alt="Profile Picture of Dr. Noah Rudko" 
                          class="w-40 h-40 object-cover rounded-full border-4 border-arkansas-red shadow-lg">
@@ -100,8 +106,8 @@
                         Postdoctoral Fellow, Biological and Agricultural Engineering Department, University of Arkansas
                     </p>
                     <p class="text-gray-700 leading-relaxed mb-4">
-                        Dr. Noah Rudko is an environmental research engineer focused on surface hydrology and water quality in agricultural regions. As a Postdoctoral Fellow at the 
-                        <span class="font-medium text-arkansas-red">University of Arkansas</span>, his research focuses on developing insight into transport processes of nutrients and emerging contaminants such as PFAS in both urban and agricultural systems to recommend appropriate management strategies.
+                        Dr. Noah Rudko is an postdoctoral researcher focused on surface hydrology and water quality in agricultural regions. As a Postdoctoral Fellow at the 
+                        <span class="font-medium text-arkansas-red">University of Arkansas</span>, his work focuses on developing insight into transport processes of nutrients and emerging contaminants such as PFAS in both urban and agricultural systems to recommend appropriate management strategies.
                     </p>
                     <p class="text-gray-700 leading-relaxed">
                         He earned his PhD in 2024 from Purdue University, where his work highlighted the hydroclimatic variables that influence nutrient sources and pathways in tile-drained watersheds. He specializes in designing and implementing monitoring studies and leveraging geospatial data to improve water quality models and conservation practice implementation.
@@ -190,7 +196,7 @@
             </div>
         </section>
 
-        <!-- 4. Publications Section (Updated and Detailed) -->
+        <!-- 4. Publications Section -->
         <section id="publications" class="bg-white p-8 md:p-12 rounded-2xl shadow-xl">
             <h2 class="text-3xl font-bold text-arkansas-red border-b-2 border-purdue-gold pb-4 mb-8">
                 Publications
@@ -234,17 +240,106 @@
                 <li class="publication-item bg-green-50/70">
                     <p class="text-sm font-medium text-primary-dark">Rudko, N., Muenich, R., Hamilton, K., Netshithothole, R., & Williams, C.</p>
                     <p class="text-sm font-bold mt-1">A quantitative review of PFAS in agricultural systems: Implications for future management.</p>
-                    <p class="text-xs text-gray-600 mt-0.5">Target Journal: <span class="font-medium">Journal of Soil and Water Conservation.</span></p>
+                    <p class="text-xs text-gray-600 mt-0.5">Target Journal: <span class="font-medium"> Science of the Total Environment.</span></p>
                 </li>
                 <li class="publication-item bg-green-50/70">
                     <p class="text-sm font-medium text-primary-dark">Rudko, N., Muenich, R., Wilson, R., & Dillman-Hasso, N.</p>
                     <p class="text-sm font-bold mt-1">Linking farmer management data to geospatial data for improved watershed modeling and management.</p>
                     <p class="text-xs text-gray-600 mt-0.5">Target Journal: <span class="font-medium">Science of the Total Environment.</span></p>
                 </li>
+                <li class="publication-item bg-green-50/70">
+                    <p class="text-sm font-medium text-primary-dark">Zhang, K., Rudko, N., Jia, X., Liu, T. Muenich, R., Candan, S., & Ding, K. .</p>
+                    <p class="text-sm font-bold mt-1"> Cross-Variable Spatial-Temporal Imputation for Water Quality Data with Missing Values.</p>
+                    <p class="text-xs text-gray-600 mt-0.5">Target Journal: <span class="font-medium">TBD</span></p>
+                </li>
+                <li class="publication-item bg-green-50/70">
+                    <p class="text-sm font-medium text-primary-dark">Rudko, N., McMillan, S., Frankenberger, J., & François B. </p>
+                    <p class="text-sm font-bold mt-1">Sensitivity of nitrate hysteresis and flushing indices to lower frequency data in agricultural watersheds.</p>
+                    <p class="text-xs text-gray-600 mt-0.5">Target Journal: <span class="font-medium">Journal of American Water Resources Association.</span></p>
+                </li>
+                 <li class="publication-item bg-green-50/70">
+                    <p class="text-sm font-medium text-primary-dark">Rudko, N., McMillan, S., Frankenberger, J., & Bowling, L. </p>
+                    <p class="text-sm font-bold mt-1">Characteristics of monitoring studies that attempt to detect a change in water quality following agricultural conservation practice implementation: A systematic review.</p>
+                    <p class="text-xs text-gray-600 mt-0.5">Target Journal: <span class="font-medium">Journal of Soil and Water Conservation.</span></p>
+                </li>
+               <li class="publication-item bg-green-50/70">
+                    <p class="text-sm font-medium text-primary-dark">Rudko, N., McMillan, S., Frankenberger, J., Bowling, L., & Hosen, J.  </p>
+                    <p class="text-sm font-bold mt-1">Long-term impact of agricultural conservation practices on nitrate concentrations in the Great Bend of Wabash, Indiana. .</p>
+                    <p class="text-xs text-gray-600 mt-0.5">Target Journal: <span class="font-medium">Journal of Soil and Water Conservation.</span></p>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- 4.5. Proposals & Grants (NEW SECTION) -->
+        <section id="proposals" class="bg-white p-8 md:p-12 rounded-2xl shadow-xl">
+            <h2 class="text-3xl font-bold text-arkansas-red border-b-2 border-purdue-gold pb-4 mb-8">
+                Proposals & Grants
+            </h2>
+            
+            <h3 class="text-2xl font-semibold text-primary-dark mb-4">Funded Grants</h3>
+            <ul class="divide-y divide-gray-100 border border-gray-100 rounded-lg mb-8">
+                <li class="proposal-item bg-green-50/70">
+                    <p class="text-sm font-bold text-primary-dark">Title: Develop a Quantitative, Useable Database of PFAS concentrations in agricultural samples including before and after treatment or practice implementation </p>
+                    <p class="text-sm italic mt-1">
+                        <span class="font-medium">Agency:</span> Natural Resources Conservation Center (NRCS)
+                    </p>
+                    <p class="text-xs text-gray-600 mt-0.5">
+                        <span class="font-medium">Role:</span> Postdoctoral Researcher (PI: Dr. R. L. Muenich) | 
+                        <span class="font-medium">Period:</span> 2025-2027
+                    </p>
+                </li>
+                <li class="proposal-item bg-green-50/70">
+                    <p class="text-sm font-bold text-primary-dark">Title: Cultivating Farmer Leaders and Farmer-to-farmer learning for cleaner waters and healthier soils in the Mississippi and Atchafayalaya River Basin </p>
+                    <p class="text-sm italic mt-1">
+                        <span class="font-medium">Agency:</span> EPA Farmer-to-Farmer
+                    </p>
+                    <p class="text-xs text-gray-600 mt-0.5">
+                        <span class="font-medium">Role:</span> Graduate Research Assistant (PIs: Dr. S. McMillan, Dr. J. Frankenberger) | 
+                        <span class="font-medium">Awarded:</span> $800,000 | 
+                        <span class="font-medium">Period:</span> 2021-2024
+                    </p>
+                </li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold text-primary-dark mb-4">Submitted & Pending</h3>
+            <ul class="divide-y divide-gray-100 border border-gray-100 rounded-lg">
+                <li class="proposal-item bg-yellow-50/70">
+                    <p class="text-sm font-bold text-primary-dark">Title: Sensor-Driven Assessment of Legacy Nutrients in the Mississippi River Basin: A Multi Scale Analysis with Regional Focus on the Arkansas Delta </p>
+                    <p class="text-sm italic mt-1">
+                        <span class="font-medium">Agency:</span> NIFA-AFRI-WQQ 
+                    </p>
+                    <p class="text-xs text-gray-600 mt-0.5">
+                        <span class="font-medium">Role:</span> PI (CoPI: Dr. R. L. Muenich) | 
+                        <span class="font-medium">Requested:</span> $300,000 | 
+                        <span class="font-medium">Status:</span> Pending Review (Submitted October 2025)
+                    </p>
+                </li>
+                <li class="proposal-item bg-yellow-50/70">
+                    <p class="text-sm font-bold text-primary-dark">Title: Factors influencing PFAS fate, transport, and accumulation in stream networks </p>
+                    <p class="text-sm italic mt-1">
+                        <span class="font-medium">Agency:</span> USGS 104g - PFAS
+                    </p>
+                    <p class="text-xs text-gray-600 mt-0.5">
+                        <span class="font-medium">Role:</span> PI (CoPI: Dr. R. L. Muenich) | 
+                        <span class="font-medium">Requested:</span> $300,000 | 
+                        <span class="font-medium">Status:</span> Pending Review (Submitted October 2025)
+                    </p>
+                </li>
+                <li class="proposal-item bg-yellow-50/70">
+                    <p class="text-sm font-bold text-primary-dark">Title: From Data to Drops: A Novel Approach to Integrating & Inferring Water Quality </p>
+                    <p class="text-sm italic mt-1">
+                        <span class="font-medium">Agency:</span> USGS 104g - General
+                    </p>
+                    <p class="text-xs text-gray-600 mt-0.5">
+                        <span class="font-medium">Role:</span> Co-PI (CoPI: Dr. R. L. Muenich) | 
+                        <span class="font-medium">Requested:</span> $300,000 | 
+                        <span class="font-medium">Status:</span> Pending Review (Submitted October 2025)
+                    </p>
+                </li>
             </ul>
         </section>
 
-        <!-- 5. Skills & Tools (New Section) -->
+        <!-- 5. Skills & Tools -->
         <section id="skills" class="bg-white p-8 md:p-12 rounded-2xl shadow-xl">
             <h2 class="text-3xl font-bold text-arkansas-red border-b-2 border-purdue-gold pb-4 mb-8">
                 Technical Skills & Modeling
@@ -266,7 +361,7 @@
                 <!-- Modeling Experience -->
                 <div class="p-6 bg-asu-maroon/10 rounded-lg border-l-4 border-asu-maroon">
                     <h3 class="text-xl font-bold mb-2 text-primary-dark">Modeling Software</h3>
-                    <p class="text-gray-700">SWAT, HEC-HMS, HEC-RAS, TRIBS</p>
+                    <p class="text-gray-700">SWAT, HEC-HMS, HEC-RAS</p>
                 </div>
             </div>
             
@@ -276,7 +371,7 @@
             </div>
         </section>
         
-        <!-- 6. Teaching & Mentoring (New Section) -->
+        <!-- 6. Teaching & Mentoring -->
         <section id="teaching" class="bg-white p-8 md:p-12 rounded-2xl shadow-xl">
             <h2 class="text-3xl font-bold text-arkansas-red border-b-2 border-purdue-gold pb-4 mb-8">
                 Teaching & Mentoring
@@ -310,13 +405,13 @@
                     <h3 class="text-2xl font-semibold text-primary-dark mb-4 border-b pb-2">Student Mentorship</h3>
                     <ul class="space-y-4 text-gray-700 text-sm">
                         <li class="border-l-2 border-arkansas-red pl-3">
-                            <span class="font-bold">University of Arkansas (2025):</span> Mentored four undergraduates (A. Neumeier, E. Waters, A. Russell, A. Villeneueve) in Biological and Agricultural Engineering.
+                            <span class="font-bold">University of Arkansas (2025):</span> Mentored four undergraduates (A. Neumeier, E. Waters, A. Russell, A. Villeneueve, T. Small, C. Resetar) in Biological and Agricultural Engineering.
                         </li>
                         <li class="border-l-2 border-purdue-gold pl-3">
                             <span class="font-bold">Purdue University (2021-2024):</span> Mentored six students across ABE, Forestry, and Civil Engineering on research projects.
                         </li>
                         <li class="border-l-2 border-asu-maroon pl-3">
-                            <span class="font-bold">Arizona State University (2020-2021):</span> Mentored students on topics including clean water science and a rainwater harvesting project.
+                            <span class="font-bold">Arizona State University (2020-2021):</span> Mentored students part of the Clean Water Science Network and a rainwater harvesting project.
                         </li>
                         <li class="border-l-2 border-gray-400 pl-3">
                             <span class="font-bold">Professional Service:</span> Member of the College of Engineering Staff Council, focusing on professional development for postdocs.
@@ -326,7 +421,7 @@
             </div>
         </section>
         
-        <!-- 7. Honors & Awards (New Section) -->
+        <!-- 7. Honors & Awards -->
         <section id="awards" class="bg-white p-8 md:p-12 rounded-2xl shadow-xl">
             <h2 class="text-3xl font-bold text-arkansas-red border-b-2 border-purdue-gold pb-4 mb-8">
                 Honors & Awards
@@ -356,7 +451,7 @@
         </section>
 
 
-        <!-- 8. Presentations (Existing Section, moved down) -->
+        <!-- 8. Presentations -->
         <section id="presentations" class="bg-white p-8 md:p-12 rounded-2xl shadow-xl">
             <h2 class="text-3xl font-bold text-arkansas-red border-b-2 border-purdue-gold pb-4 mb-8">
                 Selected Presentations
@@ -459,7 +554,7 @@
                 <a href="https://www.linkedin.com/in/noahrudko/" target="_blank" class="flex items-center space-x-2 text-primary-dark link-hover-effect p-3 rounded-lg border border-gray-200">
                     <!-- Icon: User Group (Mock LinkedIn) -->
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-3m-1.25-2.25A5.75 5.75 0 1010 16v4h4"></path></svg>
-                    <span class="font-medium">LinkedIn Profile (Confirmed)</span>
+                    <span class="font-medium">LinkedIn Profile </span>
                 </a>
             </div>
             
